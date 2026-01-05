@@ -1,0 +1,23 @@
+{
+  "name": "toondb-support-agent",
+  "version": "1.0.0",
+  "description": "ToonDB Support Agent Example demonstrating SQL + Vectors + TOON + Transactions",
+  "main": "agent.ts",
+  "scripts": {
+    "start": "ts-node agent.ts",
+    "seed": "ts-node seed.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.0",
+    "@langchain/openai": "^0.3.0",
+    "@sushanth/toondb": "0.3.2",
+    "dotenv": "^16.4.0",
+    "gpt-3-encoder": "^1.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}

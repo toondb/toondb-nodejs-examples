@@ -1,0 +1,591 @@
+{
+  "statistics": {
+    "total_turns": 60,
+    "total_recalls": 15,
+    "successful_recalls": 15,
+    "recall_accuracy": 1,
+    "total_facts": 26
+  },
+  "memory_performance": {
+    "count": 29,
+    "totalTimeMs": 8336.791245000008,
+    "minTimeMs": 189.89579100000265,
+    "maxTimeMs": 821.9417500000127,
+    "avgTimeMs": 287.4755601724141
+  },
+  "recall_tests": [
+    {
+      "turn": 16,
+      "query": "What is my name?",
+      "expected": "Sushanth",
+      "response": "Your name is Sushanth.",
+      "success": true
+    },
+    {
+      "turn": 17,
+      "query": "Where do I work?",
+      "expected": "ToonDB",
+      "response": "You work at ToonDB as a software engineer.",
+      "success": true
+    },
+    {
+      "turn": 18,
+      "query": "How old am I?",
+      "expected": "28",
+      "response": "You are 28 years old.",
+      "success": true
+    },
+    {
+      "turn": 19,
+      "query": "Where do I live?",
+      "expected": "Seattle",
+      "response": "You live in Seattle, Washington.",
+      "success": true
+    },
+    {
+      "turn": 20,
+      "query": "What's my favorite programming language?",
+      "expected": "TypeScript",
+      "response": "Your favorite programming language is TypeScript.",
+      "success": true
+    },
+    {
+      "turn": 21,
+      "query": "What do I like to build?",
+      "expected": "AI agents",
+      "response": "You love building AI agents and working with large language models (LLMs).",
+      "success": true
+    },
+    {
+      "turn": 22,
+      "query": "Do I have any pets?",
+      "expected": "Max",
+      "response": "Yes, you have a dog named Max.",
+      "success": true
+    },
+    {
+      "turn": 23,
+      "query": "Where did I go to college?",
+      "expected": "University of Washington",
+      "response": "You went to the University of Washington for college.",
+      "success": true
+    },
+    {
+      "turn": 24,
+      "query": "What's my favorite food?",
+      "expected": "tacos",
+      "response": "Your favorite food is tacos.",
+      "success": true
+    },
+    {
+      "turn": 25,
+      "query": "What do I do on weekends?",
+      "expected": "hiking",
+      "response": "On weekends, you enjoy hiking.",
+      "success": true
+    },
+    {
+      "turn": 26,
+      "query": "What project am I working on?",
+      "expected": "vector database",
+      "response": "You are working on a vector database project.",
+      "success": true
+    },
+    {
+      "turn": 27,
+      "query": "What languages do I speak?",
+      "expected": "Spanish",
+      "response": "You speak English and Spanish.",
+      "success": true
+    },
+    {
+      "turn": 28,
+      "query": "How many years of experience do I have?",
+      "expected": "5",
+      "response": "You have 5 years of experience in software development.",
+      "success": true
+    },
+    {
+      "turn": 29,
+      "query": "What am I interested in learning?",
+      "expected": "distributed systems",
+      "response": "You are interested in learning more about distributed systems.",
+      "success": true
+    },
+    {
+      "turn": 30,
+      "query": "What do I drink in the morning?",
+      "expected": "tea",
+      "response": "You drink tea every morning.",
+      "success": true
+    }
+  ],
+  "conversation_history": [
+    {
+      "turn": 1,
+      "user": "Hello! My name is Sushanth.",
+      "agent": "Hello, Sushanth! How can I assist you today?",
+      "timestamp": 1767577454125
+    },
+    {
+      "turn": 2,
+      "user": "I work at ToonDB as a software engineer.",
+      "agent": "Got it! You work at ToonDB as a software engineer. If you ever need help with coding, tech topics, or anything related to your work, just let me know!",
+      "timestamp": 1767577456179
+    },
+    {
+      "turn": 3,
+      "user": "I'm 28 years old.",
+      "agent": "Thanks for sharing, Sushanth! I’ve noted that you’re 28 years old. If you’d like to share anything else or need assistance, feel free to ask!",
+      "timestamp": 1767577457938
+    },
+    {
+      "turn": 4,
+      "user": "I live in Seattle, Washington.",
+      "agent": "Thanks for letting me know, Sushanth! I’ve saved that you live in Seattle, Washington. If you ever need local recommendations or information about your area, just ask!",
+      "timestamp": 1767577459571
+    },
+    {
+      "turn": 5,
+      "user": "My favorite programming language is TypeScript.",
+      "agent": "Great choice! I’ve noted that your favorite programming language is TypeScript. If you ever want tips, resources, or help with TypeScript projects, just let me know!",
+      "timestamp": 1767577461887
+    },
+    {
+      "turn": 6,
+      "user": "I love building AI agents and working with LLMs.",
+      "agent": "That's awesome, Sushanth! I've saved that you enjoy building AI agents and working with LLMs. If you want to discuss new ideas, need project suggestions, or have questions about AI and language models, I’m here to help!",
+      "timestamp": 1767577464173
+    },
+    {
+      "turn": 7,
+      "user": "I have a dog named Max.",
+      "agent": "That's wonderful! I've saved that you have a dog named Max. If you ever want advice, tips, or fun ideas for Max, just let me know!",
+      "timestamp": 1767577466342
+    },
+    {
+      "turn": 8,
+      "user": "I graduated from University of Washington.",
+      "agent": "Great! I've noted that you graduated from the University of Washington. If you ever want to connect with other alumni, discuss your university experience, or need information about UW, just ask!",
+      "timestamp": 1767577468267
+    },
+    {
+      "turn": 9,
+      "user": "My favorite food is tacos.",
+      "agent": "Tacos are a fantastic choice! I've saved that your favorite food is tacos. If you ever want taco recipes, restaurant recommendations in Seattle, or anything taco-related, just let me know!",
+      "timestamp": 1767577470047
+    },
+    {
+      "turn": 10,
+      "user": "I enjoy hiking on weekends.",
+      "agent": "I've saved that you enjoy hiking on weekends. If you ever want hiking trail suggestions around Seattle or tips for your hikes, feel free to ask!",
+      "timestamp": 1767577471614
+    },
+    {
+      "turn": 11,
+      "user": "I'm working on a vector database project.",
+      "agent": "Noted! I've saved that you're working on a vector database project. If you need resources, advice, or assistance related to vector databases, just let me know—I'd be happy to help!",
+      "timestamp": 1767577473386
+    },
+    {
+      "turn": 12,
+      "user": "I speak English and Spanish.",
+      "agent": "I've saved that you speak both English and Spanish. If you ever want to practice either language, need translations, or resources in those languages, just let me know!",
+      "timestamp": 1767577475520
+    },
+    {
+      "turn": 13,
+      "user": "I have 5 years of experience in software development.",
+      "agent": "I've saved that you have 5 years of experience in software development. If you ever want to discuss advanced topics, career growth, or share your experiences, I'm here to help!",
+      "timestamp": 1767577477315
+    },
+    {
+      "turn": 14,
+      "user": "I'm interested in learning more about distributed systems.",
+      "agent": "I've noted your interest in learning more about distributed systems. If you'd like, I can recommend resources, articles, or courses to help you dive deeper into this topic. Just let me know how you'd like to get started!",
+      "timestamp": 1767577479050
+    },
+    {
+      "turn": 15,
+      "user": "I drink tea every morning.",
+      "agent": "I've saved that you drink tea every morning. If you ever want recommendations for new teas to try or tips for making the perfect cup, just let me know!",
+      "timestamp": 1767577480752
+    },
+    {
+      "turn": 16,
+      "user": "What is my name?",
+      "agent": "Your name is Sushanth.",
+      "timestamp": 1767577482430
+    },
+    {
+      "turn": 17,
+      "user": "Where do I work?",
+      "agent": "You work at ToonDB as a software engineer.",
+      "timestamp": 1767577484148
+    },
+    {
+      "turn": 18,
+      "user": "How old am I?",
+      "agent": "You are 28 years old.",
+      "timestamp": 1767577485760
+    },
+    {
+      "turn": 19,
+      "user": "Where do I live?",
+      "agent": "You live in Seattle, Washington.",
+      "timestamp": 1767577487486
+    },
+    {
+      "turn": 20,
+      "user": "What's my favorite programming language?",
+      "agent": "Your favorite programming language is TypeScript.",
+      "timestamp": 1767577489167
+    },
+    {
+      "turn": 21,
+      "user": "What do I like to build?",
+      "agent": "You love building AI agents and working with large language models (LLMs).",
+      "timestamp": 1767577490927
+    },
+    {
+      "turn": 22,
+      "user": "Do I have any pets?",
+      "agent": "Yes, you have a dog named Max.",
+      "timestamp": 1767577492623
+    },
+    {
+      "turn": 23,
+      "user": "Where did I go to college?",
+      "agent": "You went to the University of Washington for college.",
+      "timestamp": 1767577494260
+    },
+    {
+      "turn": 24,
+      "user": "What's my favorite food?",
+      "agent": "Your favorite food is tacos.",
+      "timestamp": 1767577495796
+    },
+    {
+      "turn": 25,
+      "user": "What do I do on weekends?",
+      "agent": "On weekends, you enjoy hiking.",
+      "timestamp": 1767577497469
+    },
+    {
+      "turn": 26,
+      "user": "What project am I working on?",
+      "agent": "You are working on a vector database project.",
+      "timestamp": 1767577525878
+    },
+    {
+      "turn": 27,
+      "user": "What languages do I speak?",
+      "agent": "You speak English and Spanish.",
+      "timestamp": 1767577527426
+    },
+    {
+      "turn": 28,
+      "user": "How many years of experience do I have?",
+      "agent": "You have 5 years of experience in software development.",
+      "timestamp": 1767577529183
+    },
+    {
+      "turn": 29,
+      "user": "What am I interested in learning?",
+      "agent": "You are interested in learning more about distributed systems.",
+      "timestamp": 1767577530937
+    },
+    {
+      "turn": 30,
+      "user": "What do I drink in the morning?",
+      "agent": "You drink tea every morning.",
+      "timestamp": 1767577532658
+    },
+    {
+      "turn": 31,
+      "user": "Can you summarize what you know about me?",
+      "agent": "Here’s a summary of what I know about you:\n\n- Your name is Sushanth.\n- You are 28 years old.\n- You live in Seattle, Washington.\n- You work as a software engineer at ToonDB.\n- You have 5 years of experience in software development.\n- You graduated from the University of Washington.\n- Your favorite programming language is TypeScript.\n- You love building AI agents and working with large language models (LLMs).\n- You are currently working on a vector database project.\n- You speak English and Spanish.\n- You enjoy hiking on weekends.\n- Your favorite food is tacos.\n- You are interested in learning more about distributed systems.\n- You drink tea every morning.\n- You have a dog named Max.\n\nIf you’d like to update, add, or remove anything, just let me know!",
+      "timestamp": 1767577534394
+    },
+    {
+      "turn": 32,
+      "user": "I just adopted a cat named Luna!",
+      "agent": "That's wonderful news—congratulations on adopting Luna! Now I know you have both a dog named Max and a cat named Luna. If you’d like to share more about Luna or your experience so far, I’d love to hear it!",
+      "timestamp": 1767577536322
+    },
+    {
+      "turn": 33,
+      "user": "I got promoted to Senior Software Engineer!",
+      "agent": "Congratulations on your promotion to Senior Software Engineer! That’s a fantastic achievement. If you’d like to share more about your new responsibilities or how you’re feeling about the promotion, I’m here to listen and support you.",
+      "timestamp": 1767577538085
+    },
+    {
+      "turn": 34,
+      "user": "I'm planning to move to San Francisco next month.",
+      "agent": "Thanks for letting me know! I’ve noted that you’re planning to move to San Francisco next month. If you need any tips about relocating, settling in, or exploring San Francisco, just let me know—I’m here to help!",
+      "timestamp": 1767577540100
+    },
+    {
+      "turn": 35,
+      "user": "I started learning Rust recently.",
+      "agent": "That's great! I've noted that you've started learning Rust recently. If you need any resources, tips, or help with Rust programming, feel free to ask—I'm here to help you on your learning journey!",
+      "timestamp": 1767577542159
+    },
+    {
+      "turn": 36,
+      "user": "Tell me about my pets.",
+      "agent": "You have two pets: a dog named Max and a cat named Luna (whom you recently adopted). If you’d like to share more about them or need tips for caring for both, just let me know!",
+      "timestamp": 1767577545226
+    },
+    {
+      "turn": 37,
+      "user": "What's my current job title?",
+      "agent": "Your current job title is Senior Software Engineer. Congratulations again on your promotion!",
+      "timestamp": 1767577549621
+    },
+    {
+      "turn": 38,
+      "user": "I completed a marathon last weekend!",
+      "agent": "That’s an incredible achievement—congratulations on completing a marathon last weekend! If you’d like to share more about your experience or celebrate in any way, I’m here for you. Well done!",
+      "timestamp": 1767577553856
+    },
+    {
+      "turn": 39,
+      "user": "I'm reading a book about database internals.",
+      "agent": "Great! I’ve noted that you’re currently reading a book about database internals. If you want to discuss anything you’re learning or need recommendations for similar books, just let me know!",
+      "timestamp": 1767577560255
+    },
+    {
+      "turn": 40,
+      "user": "My favorite movie is The Matrix.",
+      "agent": "Got it! Your favorite movie is The Matrix. If you ever want to discuss it or get recommendations for similar movies, just let me know!",
+      "timestamp": 1767577590624
+    },
+    {
+      "turn": 41,
+      "user": "What do you remember about my hobbies?",
+      "agent": "I remember that you enjoy hiking on weekends and you also play guitar in your free time. If you have any new hobbies or want to talk more about these, just let me know!",
+      "timestamp": 1767577592927
+    },
+    {
+      "turn": 42,
+      "user": "I'm allergic to peanuts.",
+      "agent": "Thank you for letting me know. I’ve noted that you are allergic to peanuts. If you ever need advice on managing your allergy or tips for safe eating, feel free to ask!",
+      "timestamp": 1767577594905
+    },
+    {
+      "turn": 43,
+      "user": "I play guitar in my free time.",
+      "agent": "Thanks for sharing! I already have it noted that you play guitar in your free time. If you want to talk about music, need song recommendations, or want tips on improving your guitar skills, just let me know!",
+      "timestamp": 1767577596200
+    },
+    {
+      "turn": 44,
+      "user": "What are all the things I'm learning?",
+      "agent": "You are currently learning Rust and are also interested in learning more about distributed systems. If you have any questions or need resources for either topic, just let me know!",
+      "timestamp": 1767577600187
+    },
+    {
+      "turn": 45,
+      "user": "I have a brother named Ravi.",
+      "agent": "Thanks for sharing! I’ve noted that you have a brother named Ravi. If you ever want to talk about your family or share more, I’m here to listen.",
+      "timestamp": 1767577602314
+    },
+    {
+      "turn": 46,
+      "user": "List everything you know about my professional life.",
+      "agent": "Here’s what I know about your professional life:\n\n- You are currently a Senior Software Engineer.\n- You work at ToonDB.\n- You have 5 years of experience in software development.\n- Your favorite programming language is TypeScript.\n- You are working on a vector database project.\n- You love building AI agents and working with large language models (LLMs).\n- You graduated from the University of Washington.\n- You are interested in learning more about distributed systems.\n- You recently started learning Rust.\n- You are planning to move to San Francisco next month.\n\nIf there’s anything you’d like to add or update, just let me know!",
+      "timestamp": 1767577606865
+    },
+    {
+      "turn": 47,
+      "user": "What are my dietary preferences and restrictions?",
+      "agent": "Your dietary preferences and restrictions are as follows:\n- You are allergic to peanuts.\n- Your favorite food is tacos.\n\nIf you have any other dietary needs or preferences, let me know so I can keep track of them for you!",
+      "timestamp": 1767577613192
+    },
+    {
+      "turn": 48,
+      "user": "Tell me about my family and pets.",
+      "agent": "Here’s what I know about your family and pets:\n\n- You have a brother named Ravi.\n- You have a dog named Max.\n- You recently adopted a cat named Luna.\n\nIf you’d like to share more details or updates about your family or pets, just let me know!",
+      "timestamp": 1767577621666
+    },
+    {
+      "turn": 49,
+      "user": "Actually, I'm 29 now, not 28. I had a birthday!",
+      "agent": "Thank you for the update, and happy belated birthday! I’ve noted that you are now 29 years old. If you’d like to share how you celebrated, I’d love to hear about it!",
+      "timestamp": 1767577676764
+    },
+    {
+      "turn": 50,
+      "user": "How old am I now?",
+      "agent": "You are now 29 years old. Happy belated birthday!",
+      "timestamp": 1767577679592
+    },
+    {
+      "turn": 51,
+      "user": "I changed my mind about moving to San Francisco. I'm staying in Seattle.",
+      "agent": "Thanks for letting me know! I’ve updated your information—you’ve decided to stay in Seattle instead of moving to San Francisco. If anything else changes or if you need tips for enjoying Seattle, just let me know!",
+      "timestamp": 1767577682615
+    },
+    {
+      "turn": 52,
+      "user": "Where am I planning to live?",
+      "agent": "You are planning to continue living in Seattle, as you decided not to move to San Francisco.",
+      "timestamp": 1767577685652
+    },
+    {
+      "turn": 53,
+      "user": "What programming languages do I know?",
+      "agent": "You know TypeScript (which is your favorite programming language), and you have also started learning Rust recently. If there are more languages you know or are interested in, let me know so I can keep your information up to date!",
+      "timestamp": 1767577688994
+    },
+    {
+      "turn": 54,
+      "user": "What are all my hobbies and interests?",
+      "agent": "Here are your hobbies and interests:\n\n- Hiking on weekends\n- Playing guitar in your free time\n- Building AI agents\n- Working with large language models (LLMs)\n- Reading (currently a book about database internals)\n- Learning new programming languages (recently started learning Rust)\n- Interested in distributed systems\n\nIf you have any new hobbies or interests, just let me know!",
+      "timestamp": 1767577692596
+    },
+    {
+      "turn": 55,
+      "user": "Tell me about my education and work experience.",
+      "agent": "Here’s what I know about your education and work experience:\n\n- Education: You graduated from the University of Washington.\n- Work Experience: You have 5 years of experience in software development.\n- You currently work as a Senior Software Engineer at ToonDB.\n- Your professional interests include building AI agents, working with large language models (LLMs), and working on a vector database project.\n\nIf you’d like to add more details or update anything, just let me know!",
+      "timestamp": 1767577739505
+    },
+    {
+      "turn": 56,
+      "user": "Give me a complete summary of everything you know about me.",
+      "agent": "Here’s a complete summary of everything I know about you:\n\nPersonal Information:\n- Your name is Sushanth.\n- You are 29 years old.\n- You live in Seattle, Washington.\n- You have a brother named Ravi.\n- You are allergic to peanuts.\n\nEducation:\n- You graduated from the University of Washington.\n\nProfessional Life:\n- You are currently a Senior Software Engineer at ToonDB.\n- You have 5 years of experience in software development.\n- Your favorite programming language is TypeScript.\n- You are working on a vector database project.\n- You love building AI agents and working with large language models (LLMs).\n- You are interested in learning more about distributed systems.\n- You recently started learning Rust.\n- You were planning to move to San Francisco but decided to stay in Seattle.\n\nLanguages:\n- You speak English and Spanish.\n\nPets:\n- You have a dog named Max.\n- You recently adopted a cat named Luna.\n\nHobbies and Interests:\n- You enjoy hiking on weekends.\n- You play guitar in your free time.\n- You like reading (currently a book about database internals).\n- Your favorite food is tacos.\n- Your favorite movie is The Matrix.\n- You drink tea every morning.\n- You completed a marathon last weekend.\n\nIf there’s anything you’d like to update, add, or remove, let me know!",
+      "timestamp": 1767577743142
+    },
+    {
+      "turn": 57,
+      "user": "What's the most recent thing I told you?",
+      "agent": "The most recent thing you told me is that you wanted a complete summary of everything I know about you. Just before that, you shared details about your education and work experience. If you meant the most recent personal update, it was that you changed your mind about moving to San Francisco and are staying in Seattle.",
+      "timestamp": 1767577745744
+    },
+    {
+      "turn": 58,
+      "user": "How many pets do I have and what are their names?",
+      "agent": "You have two pets: a dog named Max and a cat named Luna.",
+      "timestamp": 1767577749486
+    },
+    {
+      "turn": 59,
+      "user": "What are my career goals and learning interests?",
+      "agent": "Your learning interests include:\n\n- Learning more about distributed systems\n- Recently started learning Rust\n\nAs for your career goals, while you haven't stated them explicitly, your current focus on distributed systems, large language models (LLMs), AI agents, and your work on a vector database project suggest a strong interest in advancing in the fields of AI, software engineering, and systems architecture. If you have specific career goals you'd like me to remember, just let me know!",
+      "timestamp": 1767577753952
+    },
+    {
+      "turn": 60,
+      "user": "Thank you for this conversation! Can you recap our chat?",
+      "agent": "Absolutely! Here’s a recap of our conversation:\n\n- You asked me several questions about your personal details (name, age, work, location, favorite food, hobbies, pets, etc.), and I provided answers based on what I know about you.\n- You shared updates about your life, including:\n  - Adopting a cat named Luna.\n  - Getting promoted to Senior Software Engineer.\n  - Planning (and later deciding against) a move to San Francisco, choosing to stay in Seattle.\n  - Starting to learn Rust.\n  - Completing a marathon last weekend.\n  - Reading a book about database internals.\n  - Your favorite movie: The Matrix.\n  - Being allergic to peanuts.\n  - Having a brother named Ravi.\n  - Turning 29 years old.\n- You asked for summaries about your hobbies, professional life, education, work experience, dietary preferences, family, and pets.\n- We clarified your current city, pets (Max and Luna), and your learning interests (Rust, distributed systems).\n- I kept my information updated as you shared new facts and changes, and I provided a complete summary of what I know about you when requested.\n- You thanked me and asked for a recap of our chat.\n\nIf you want to revisit or expand on any topic, just let me know—I’m always here to help!",
+      "timestamp": 1767577758930
+    }
+  ],
+  "facts_stored": [
+    {
+      "key": "name",
+      "value": "Sushanth"
+    },
+    {
+      "key": "job",
+      "value": "software engineer at ToonDB"
+    },
+    {
+      "key": "age",
+      "value": "28"
+    },
+    {
+      "key": "location",
+      "value": "Seattle, Washington"
+    },
+    {
+      "key": "favorite_language",
+      "value": "TypeScript"
+    },
+    {
+      "key": "interests",
+      "value": "AI agents and LLMs"
+    },
+    {
+      "key": "pet",
+      "value": "dog named Max"
+    },
+    {
+      "key": "education",
+      "value": "University of Washington"
+    },
+    {
+      "key": "favorite_food",
+      "value": "tacos"
+    },
+    {
+      "key": "hobby",
+      "value": "hiking"
+    },
+    {
+      "key": "current_project",
+      "value": "vector database"
+    },
+    {
+      "key": "languages",
+      "value": "English and Spanish"
+    },
+    {
+      "key": "experience",
+      "value": "5 years"
+    },
+    {
+      "key": "learning_interest",
+      "value": "distributed systems"
+    },
+    {
+      "key": "habit",
+      "value": "drinks tea"
+    },
+    {
+      "key": "new_pet",
+      "value": "cat named Luna"
+    },
+    {
+      "key": "promotion",
+      "value": "Senior Software Engineer"
+    },
+    {
+      "key": "future_move",
+      "value": "San Francisco"
+    },
+    {
+      "key": "new_skill",
+      "value": "learning Rust"
+    },
+    {
+      "key": "achievement",
+      "value": "completed marathon"
+    },
+    {
+      "key": "current_reading",
+      "value": "database internals"
+    },
+    {
+      "key": "favorite_movie",
+      "value": "The Matrix"
+    },
+    {
+      "key": "allergy",
+      "value": "peanuts"
+    },
+    {
+      "key": "instrument",
+      "value": "guitar"
+    },
+    {
+      "key": "family",
+      "value": "brother named Ravi"
+    },
+    {
+      "key": "age_update",
+      "value": "29"
+    }
+  ]
+}

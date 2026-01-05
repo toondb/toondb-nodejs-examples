@@ -1,0 +1,23 @@
+{
+    "name": "nodejs-toondb-agent",
+    "version": "1.0.0",
+    "description": "ToonDB LangGraph Agent in Node.js",
+    "main": "agent.ts",
+    "scripts": {
+        "start": "ts-node agent.ts",
+        "test": "ts-node test_agent.ts"
+    },
+    "dependencies": {
+        "@langchain/core": "^0.3.0",
+        "@langchain/langgraph": "^0.2.0",
+        "@langchain/openai": "^0.3.0",
+        "@sushanth/toondb": "0.3.2",
+        "dotenv": "^16.4.0",
+        "zod": "^3.22.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "ts-node": "^10.9.0",
+        "typescript": "^5.0.0"
+    }
+}
