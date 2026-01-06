@@ -93,7 +93,7 @@ console.log(`Used ${result.totalTokens} tokens`);
     "context": "ts-node context-query.ts"
   },
   "dependencies": {
-    "@sushanth/toondb": "^0.3.2"
+    "@sushanth/toondb": "^0.3.3"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",

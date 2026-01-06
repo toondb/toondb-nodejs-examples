@@ -11,7 +11,7 @@
   "dependencies": {
     "@langchain/core": "^0.3.0",
     "@langchain/openai": "^0.3.0",
-    "@sushanth/toondb": "0.3.2",
+    "@sushanth/toondb": "^0.3.3",
     "dotenv": "^16.4.0",
     "gpt-3-encoder": "^1.1.4"
   },
