@@ -11,6 +11,6 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@sushanth/toondb": "^0.2.9"
+    "@sushanth/toondb": "^0.3.3"
   }
 }
