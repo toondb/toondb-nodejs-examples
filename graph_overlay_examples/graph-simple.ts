@@ -2,7 +2,7 @@
  * ToonDB Graph Overlay Example (Node.js/TypeScript) - Simplified
  */
 
-import { Database, GraphOverlay } from '@sushanth/toondb';
+import { Database, GraphOverlay } from '@sochdb/sochdb';
 
 async function main() {
   console.log('=== ToonDB Node.js SDK - Graph Overlay Example ===\n');

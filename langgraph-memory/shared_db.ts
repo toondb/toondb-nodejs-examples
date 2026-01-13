@@ -1,4 +1,4 @@
-import { Database } from "@sushanth/toondb";
+import { Database } from "@sochdb/sochdb";
 import * as dotenv from "dotenv";
 
 dotenv.config();
@@ -9,7 +9,7 @@ export class SharedDatabase {
     private dbPath: string;
 
     private constructor() {
-        this.dbPath = process.env.TOONDB_PATH || "./toondb_data_node";
+        this.dbPath = process.env.SOCHDB_PATH || "./sochdb_data_node";
     }
 
     public static getInstance(): SharedDatabase {
@@ -21,7 +21,7 @@ export class SharedDatabase {
 
     async init() {
         if (!this.db) {
-            console.log(`[SharedDB] Opening ToonDB at ${this.dbPath}...`);
+            console.log(`[SharedDB] Opening SochDB at ${this.dbPath}...`);
             this.db = await Database.open(this.dbPath);
         }
     }
@@ -66,7 +66,7 @@ export class SharedDatabase {
 
     async close() {
         if (this.db) {
-            console.log("[SharedDB] Closing ToonDB connection...");
+            console.log("[SharedDB] Closing SochDB connection...");
             try {
                 await this.db.close();
             } catch (e) {

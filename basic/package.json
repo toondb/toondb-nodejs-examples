@@ -1,5 +1,5 @@
 {
-  "name": "toondb-node-examples",
+  "name": "sochdb-node-examples",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,6 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@sushanth/toondb": "^0.3.3"
+    "@sochdb/sochdb": "^0.4.0"
   }
 }

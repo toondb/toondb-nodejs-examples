@@ -1,4 +1,4 @@
-import { Database } from "@sushanth/toondb";
+import { Database } from "@sochdb/sochdb";
 import * as dotenv from "dotenv";
 import { OpenAIEmbeddings } from "@langchain/openai";
 import { SCHEMA } from "./schema.ts";

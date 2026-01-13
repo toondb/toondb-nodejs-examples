@@ -1,7 +1,7 @@
 {
-    "name": "nodejs-toondb-agent",
+    "name": "nodejs-sochdb-agent",
     "version": "1.0.0",
-    "description": "ToonDB LangGraph Agent in Node.js",
+    "description": "SochDB LangGraph Agent in Node.js",
     "main": "agent.ts",
     "scripts": {
         "start": "ts-node agent.ts",
@@ -11,7 +11,7 @@
         "@langchain/core": "^0.3.0",
         "@langchain/langgraph": "^0.2.0",
         "@langchain/openai": "^0.3.0",
-        "@sushanth/toondb": "^0.3.3",
+        "@sochdb/sochdb": "^0.4.0",
         "dotenv": "^16.4.0",
         "zod": "^3.22.0"
     },

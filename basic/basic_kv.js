@@ -1,12 +1,12 @@
-const { Database } = require('@sushanth/toondb');
+const { Database } = require('@sochdb/sochdb');
 
 async function main() {
     console.log('Node.js SDK Test');
     console.log('================');
 
     try {
-        // Use static Database.open() method
-        const db = await Database.open('./test_node_db');
+        // Use Database.open() for embedded mode (synchronous open)
+        const db = Database.open('./test_node_db');
         console.log('✅ Database opened');
 
         // Test put
@@ -22,13 +22,16 @@ async function main() {
         const email = await db.getPath('users/alice/email');
         console.log(`✅ Path: users/alice/email = ${email?.toString()}`);
 
-        // Test scan
+        // Test scanPrefix
         await db.put(Buffer.from('tenants/acme/user1'), Buffer.from('{"name":"Alice"}'));
         await db.put(Buffer.from('tenants/acme/user2'), Buffer.from('{"name":"Bob"}'));
-        const scanResults = await db.scan('tenants/acme/');
-        console.log(`✅ Scan: Found ${scanResults.length} items with prefix 'tenants/acme/'`);
+        let count = 0;
+        for await (const [key, value] of db.scanPrefix(Buffer.from('tenants/acme/'))) {
+            count++;
+        }
+        console.log(`✅ Scan: Found ${count} items with prefix 'tenants/acme/'`);
 
-        await db.close();
+        db.close();
         console.log('✅ Database closed');
         console.log('\n🎉 All Node.js SDK tests passed!');
     } catch (err) {

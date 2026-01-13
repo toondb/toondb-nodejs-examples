@@ -1,7 +1,7 @@
 {
   "name": "new_features",
   "version": "1.0.0",
-  "description": "This directory contains TypeScript examples demonstrating the new features in ToonDB v0.3.x.",
+  "description": "This directory contains TypeScript examples demonstrating the new features in SochDB v0.4.x.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@sushanth/toondb": "^0.3.3",
+    "@sochdb/sochdb": "^0.4.0",
     "@types/node": "^25.0.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"

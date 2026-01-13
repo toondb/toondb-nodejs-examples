@@ -1,7 +1,7 @@
 {
-  "name": "toondb-support-agent",
+  "name": "sochdb-support-agent",
   "version": "1.0.0",
-  "description": "ToonDB Support Agent Example demonstrating SQL + Vectors + TOON + Transactions",
+  "description": "SochDB Support Agent Example demonstrating SQL + Vectors + TOON + Transactions",
   "main": "agent.ts",
   "scripts": {
     "start": "ts-node agent.ts",
@@ -11,7 +11,7 @@
   "dependencies": {
     "@langchain/core": "^0.3.0",
     "@langchain/openai": "^0.3.0",
-    "@sushanth/toondb": "^0.3.3",
+    "@sochdb/sochdb": "^0.4.0",
     "dotenv": "^16.4.0",
     "gpt-3-encoder": "^1.1.4"
   },

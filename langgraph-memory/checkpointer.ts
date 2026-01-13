@@ -7,13 +7,13 @@ import {
     PendingWrite
 } from "@langchain/langgraph-checkpoint";
 import { RunnableConfig } from "@langchain/core/runnables";
-import { Database } from "@sushanth/toondb";
+import { Database } from "@sochdb/sochdb";
 import * as dotenv from "dotenv";
 import { sharedDb } from "./shared_db";
 
 dotenv.config();
 
-export class ToonDBCheckpointer extends BaseCheckpointSaver {
+export class SochDBCheckpointer extends BaseCheckpointSaver {
 
     constructor() {
         super();
@@ -147,4 +147,4 @@ export class ToonDBCheckpointer extends BaseCheckpointSaver {
     }
 }
 
-export const checkpointer = new ToonDBCheckpointer();
+export const checkpointer = new SochDBCheckpointer();

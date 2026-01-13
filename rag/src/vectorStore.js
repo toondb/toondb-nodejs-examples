@@ -1,7 +1,7 @@
 /**
  * ToonDB RAG System - Vector Store using ToonDB
  */
-const { Database } = require('@sushanth/toondb');
+const { Database } = require('@sochdb/sochdb');
 const { Chunk } = require('./documents');
 const config = require('./config');
 
@@ -28,7 +28,7 @@ class ToonDBVectorStore {
 
     async open() {
         if (!this._db) {
-            this._db = await Database.open(this.dbPath);
+            this._db = Database.open(this.dbPath);
         }
         return this._db;
     }
@@ -55,7 +55,7 @@ class ToonDBVectorStore {
                 endIndex: chunk.endIndex
             });
 
-            await db.put(`chunks/${chunkId}`, chunkData);
+            await db.put(Buffer.from(`chunks/${chunkId}`), Buffer.from(chunkData));
 
             // Store embedding as base64
             const embedding = embeddings[i];
@@ -63,7 +63,7 @@ class ToonDBVectorStore {
             for (let j = 0; j < embedding.length; j++) {
                 buffer.writeFloatLE(embedding[j], j * 4);
             }
-            await db.put(`vectors/${chunkId}`, buffer.toString('base64'));
+            await db.put(Buffer.from(`vectors/${chunkId}`), Buffer.from(buffer.toString('base64')));
 
             // Update cache
             this._chunksCache.set(chunkId, chunk);
@@ -124,13 +124,12 @@ class ToonDBVectorStore {
         try {
             const db = await this.open();
 
-            // Scan for chunks
-            const chunkResults = await db.scanPrefix('chunks/');
-            for (const kv of chunkResults) {
-                const key = typeof kv.key === 'string' ? kv.key : kv.key.toString();
-                const chunkId = key.replace('chunks/', '');
-                const value = typeof kv.value === 'string' ? kv.value : kv.value.toString();
-                const data = JSON.parse(value);
+            // Scan for chunks - scanPrefix returns async generator
+            for await (const [key, value] of db.scanPrefix(Buffer.from('chunks/'))) {
+                const keyStr = key.toString();
+                const chunkId = keyStr.replace('chunks/', '');
+                const valueStr = value.toString();
+                const data = JSON.parse(valueStr);
 
                 const chunk = new Chunk(
                     data.content,
@@ -143,14 +142,13 @@ class ToonDBVectorStore {
             }
 
             // Scan for vectors
-            const vectorResults = await db.scanPrefix('vectors/');
-            for (const kv of vectorResults) {
-                const key = typeof kv.key === 'string' ? kv.key : kv.key.toString();
-                const chunkId = key.replace('vectors/', '');
-                const value = typeof kv.value === 'string' ? kv.value : kv.value.toString();
+            for await (const [key, value] of db.scanPrefix(Buffer.from('vectors/'))) {
+                const keyStr = key.toString();
+                const chunkId = keyStr.replace('vectors/', '');
+                const valueStr = value.toString();
 
                 // Decode base64 to float array
-                const buffer = Buffer.from(value, 'base64');
+                const buffer = Buffer.from(valueStr, 'base64');
                 const vector = [];
                 for (let i = 0; i < buffer.length; i += 4) {
                     vector.push(buffer.readFloatLE(i));
@@ -168,8 +166,8 @@ class ToonDBVectorStore {
 
         for (const chunkId of chunkIds) {
             try {
-                await db.delete(`chunks/${chunkId}`);
-                await db.delete(`vectors/${chunkId}`);
+                await db.delete(Buffer.from(`chunks/${chunkId}`));
+                await db.delete(Buffer.from(`vectors/${chunkId}`));
             } catch (e) {
                 // Ignore
             }

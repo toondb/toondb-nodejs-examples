@@ -1,5 +1,5 @@
 /**
- * ToonDB Graph Overlay Example (Node.js/TypeScript)
+ * SochDB Graph Overlay Example (Node.js/TypeScript)
  *
  * Demonstrates the Graph Overlay feature for agent memory,
  * providing lightweight graph operations on top of KV storage.
@@ -11,10 +11,10 @@ import {
   GraphNode,
   GraphEdge,
   TraversalDirection,
-} from '@sushanth/toondb';
+} from '@sochdb/sochdb';
 
 async function main() {
-  console.log('=== ToonDB Graph Overlay Example (Node.js) ===\n');
+  console.log('=== SochDB Graph Overlay Example (Node.js) ===\n');
 
   // Open database
   const db = await Database.open('./graph_example_db');
@@ -49,10 +49,10 @@ async function main() {
 
   // Create project node
   await graph.addNode({
-    id: 'project_toondb',
+    id: 'project_sochdb',
     type: 'project',
     properties: {
-      name: 'ToonDB',
+      name: 'SochDB',
       status: 'active',
       techStack: ['rust', 'typescript', 'python', 'go'],
     },

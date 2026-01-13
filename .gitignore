@@ -138,3 +138,31 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .DS_Store
+
+# SochDB Examples - Database directories and generated files
+**/sochdb_data/
+**/sochdb_data_*/
+**/*_sochdb_data/
+**/toondb_data/
+**/demo_*_db/
+**/*_db/
+**/test_*_db/
+**/sql_*_db/
+*.db
+*.sqlite
+*.sqlite3
+
+# SochDB Examples - Generated/temporary files
+*_metrics.json
+*_support_metrics.json
+sample_*_docs.md
+
+# SochDB Examples - Document directories (generated)
+**/documents/sample_*.md
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

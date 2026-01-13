@@ -147,13 +147,13 @@ class MockLLMGenerator {
         let answer = 'I am a mock AI. ';
 
         if (q.includes('install')) {
-            answer += 'To install ToonDB, run `npm install @sushanth/toondb` or `pip install toondb-client`.';
+            answer += 'To install SochDB, run `npm install @sochdb/sochdb` or `pip install sochdb`.';
         } else if (q.includes('features')) {
-            answer += 'ToonDB features include Key-Value Store, Vector Search, and SQL Support.';
+            answer += 'SochDB features include Key-Value Store, Vector Search, and SQL Support.';
         } else if (q.includes('sql')) {
-            answer += 'Yes, ToonDB supports SQL operations like CREATE, INSERT, SELECT.';
-        } else if (q.includes('toondb')) {
-            answer += 'ToonDB is a high-performance embedded database designed for AI applications.';
+            answer += 'Yes, SochDB supports SQL operations like CREATE, INSERT, SELECT.';
+        } else if (q.includes('sochdb') || q.includes('toondb')) {
+            answer += 'SochDB is a high-performance embedded database designed for AI applications.';
         } else {
             answer += `I found ${results.length} relevant sources.`;
         }

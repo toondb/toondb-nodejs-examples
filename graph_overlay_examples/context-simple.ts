@@ -2,7 +2,7 @@
  * ToonDB Context Query Example (Node.js/TypeScript) - Simplified
  */
 
-import { Database } from '@sushanth/toondb';
+import { Database } from '@sochdb/sochdb';
 
 async function main() {
   console.log('=== ToonDB Node.js SDK - Context Query Example ===\n');

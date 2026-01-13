@@ -1,4 +1,4 @@
-const { Database } = require('@sushanth/toondb');
+const { Database } = require('@sochdb/sochdb');
 
 async function main() {
   const db = await Database.open('./sql_test_db');

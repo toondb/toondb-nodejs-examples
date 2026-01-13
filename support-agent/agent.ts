@@ -1,5 +1,5 @@
 
-import { Database } from "@sushanth/toondb";
+import { Database } from "@sochdb/sochdb";
 import * as dotenv from "dotenv";
 import { AzureChatOpenAI } from "@langchain/openai";
 import { rowsToToon, estimateTokens } from "./utils.ts";

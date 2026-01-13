@@ -112,7 +112,7 @@ export const app = workflow.compile({ checkpointer: checkpointer as any });
 
 if (require.main === module) {
     (async () => {
-        console.log("Initializing ToonDB LangGraph Agent (Node.js)...");
+        console.log("Initializing SochDB LangGraph Agent (Node.js)...");
 
         // @ts-ignore
         const config = { configurable: { thread_id: "demo_thread_node_1" } };

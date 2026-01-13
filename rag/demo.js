@@ -37,24 +37,24 @@ All operations support ACID transactions with snapshot isolation.
 
 Node.js:
 \`\`\`
-npm install @sushanth/toondb
+npm install @sochdb/sochdb
 \`\`\`
 
 Python:
 \`\`\`
-pip install toondb-client
+pip install sochdb
 \`\`\`
 
 ## Quick Start
 
 \`\`\`javascript
-const { Database } = require('@sushanth/toondb');
+const { Database } = require('@sochdb/sochdb');
 
-const db = await Database.open('./my_db');
-await db.put('key', 'value');
-const value = await db.get('key');
-console.log(value); // 'value'
-await db.close();
+const db = Database.open('./my_db');
+await db.put(Buffer.from('key'), Buffer.from('value'));
+const value = await db.get(Buffer.from('key'));
+console.log(value.toString()); // 'value'
+db.close();
 \`\`\`
 
 ## Performance

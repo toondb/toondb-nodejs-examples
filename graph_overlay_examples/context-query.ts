@@ -12,7 +12,7 @@ import {
   DeduplicationStrategy,
   TokenEstimator,
   FusionStrategy,
-} from '@sushanth/toondb';
+} from '@sochdb/sochdb';
 
 async function main() {
   console.log('=== ToonDB Context Query Example (Node.js) ===\n');

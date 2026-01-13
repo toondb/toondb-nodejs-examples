@@ -1,5 +1,5 @@
 
-import { Database } from "@sushanth/toondb";
+import { Database } from "@sochdb/sochdb";
 import { AzureOpenAIEmbeddings } from "@langchain/openai";
 import { v4 as uuidv4 } from 'uuid';
 import * as dotenv from "dotenv";
@@ -7,7 +7,7 @@ import { sharedDb } from "./shared_db";
 
 dotenv.config();
 
-export class ToonDBMemory {
+export class SochDBMemory {
     private embeddings: AzureOpenAIEmbeddings;
 
     constructor() {
@@ -45,7 +45,7 @@ export class ToonDBMemory {
             type: "episodic"
         };
 
-        // Store in ToonDB (using JSON for simplicity in this demo)
+        // Store in SochDB (using JSON for simplicity in this demo)
         // Key format: memories/{id}
         const key = `memories/${id}`;
         const value = JSON.stringify(memory);
@@ -143,4 +143,4 @@ export class ToonDBMemory {
 }
 
 
-export const memoryStore = new ToonDBMemory();
+export const memoryStore = new SochDBMemory();

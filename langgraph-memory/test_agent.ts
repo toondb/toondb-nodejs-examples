@@ -94,12 +94,12 @@ class ConversationTester {
     }
 
     async runTest() {
-        console.log("\n🚀 Starting 60-Turn Conversation Test with ToonDB Agent (Node.js)");
+        console.log("\n🚀 Starting 60-Turn Conversation Test with SochDB Agent (Node.js)");
 
         // Phase 1: Fact Gathering
         console.log("\n📋 PHASE 1: Introduction and Fact Gathering (15 turns)");
         await this.runTurn("Hello! My name is Sushanth.", 1); this.addFact("name", "Sushanth");
-        await this.runTurn("I work at ToonDB as a software engineer.", 2); this.addFact("job", "software engineer at ToonDB");
+        await this.runTurn("I work at SochDB as a software engineer.", 2); this.addFact("job", "software engineer at SochDB");
         await this.runTurn("I'm 28 years old.", 3); this.addFact("age", "28");
         await this.runTurn("I live in Seattle, Washington.", 4); this.addFact("location", "Seattle, Washington");
         await this.runTurn("My favorite programming language is TypeScript.", 5); this.addFact("favorite_language", "TypeScript");
@@ -120,7 +120,7 @@ class ConversationTester {
         this.config.configurable.thread_id = `${this.threadId}_phase2`;
 
         await this.testRecall("What is my name?", "Sushanth", 16);
-        await this.testRecall("Where do I work?", "ToonDB", 17);
+        await this.testRecall("Where do I work?", "SochDB", 17);
         await this.testRecall("How old am I?", "28", 18);
         await this.testRecall("Where do I live?", "Seattle", 19);
         await this.testRecall("What's my favorite programming language?", "TypeScript", 20);
