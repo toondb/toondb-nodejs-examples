@@ -1,11 +1,11 @@
-# ToonDB Node.js Examples
+# SochDB Node.js Examples
 
-Official Node.js examples for ToonDB - the high-performance embedded database for AI applications. This repository demonstrates ToonDB integration patterns in JavaScript/TypeScript.
+Official Node.js examples for SochDB - the high-performance embedded database for AI applications. This repository demonstrates SochDB integration patterns in JavaScript/TypeScript.
 
 ## 📂 Repository Structure
 
 ```
-toondb-nodejs-examples/
+sochdb-nodejs-examples/
 ├── basic/       # Basic key-value operations and SQL
 └── rag/         # Complete RAG (Retrieval-Augmented Generation) system
 ```
@@ -15,19 +15,19 @@ toondb-nodejs-examples/
 ### Prerequisites
 
 - Node.js 18+ installed
-- ToonDB Node.js SDK: `@sushanth/toondb`
+- SochDB Node.js SDK: `@sochdb/sochdb`
 
 ### Installation
 
 ```bash
-npm install @sushanth/toondb
+npm install @sochdb/sochdb
 ```
 
 ## 📚 Examples
 
 ### 1. Basic Operations (`basic/`)
 
-**Demonstrates fundamental ToonDB operations** in Node.js.
+**Demonstrates fundamental SochDB operations** in Node.js.
 
 **Features**:
 - Database initialization
@@ -70,7 +70,7 @@ Node.js SDK Test
 - Executing SQL queries
 - Error handling in async/await
 
-**Stats**: ✅ ~1 second runtime | Perfect for learning ToonDB basics
+**Stats**: ✅ ~1 second runtime | Perfect for learning SochDB basics
 
 ---
 
@@ -80,7 +80,7 @@ Node.js SDK Test
 
 **Architecture**:
 ```
-Document → Chunking → Embedding → ToonDB Storage
+Document → Chunking → Embedding → SochDB Storage
 Query → Embedding → Vector Search → Context Assembly → LLM Generation
 ```
 
@@ -88,7 +88,7 @@ Query → Embedding → Vector Search → Context Assembly → LLM Generation
 - Document ingestion and preprocessing
 - Text chunking with configurable size/overlap
 - Azure OpenAI embeddings integration
-- ToonDB vector storage with HNSW index
+- SochDB vector storage with HNSW index
 - Semantic search for context retrieval
 - Query generation with retrieved context
 - Production-ready error handling
@@ -97,7 +97,7 @@ Query → Embedding → Vector Search → Context Assembly → LLM Generation
 - `src/documents.js` - Document loading and management
 - `src/chunking.js` - Text splitting strategies
 - `src/embeddings.js` - Azure OpenAI embeddings client
-- `src/vectorStore.js` - ToonDB vector operations
+- `src/vectorStore.js` - SochDB vector operations
 - `src/generation.js` - LLM answer generation
 - `src/rag.js` - End-to-end RAG pipeline
 - `demo.js` - Interactive demonstration
@@ -177,7 +177,7 @@ npm test
 ---
 
 ### 4. Support Agent (`support-agent/`)
-**"Where's my order?" Support Bot** showcasing ToonDB's "Dual Nature": **Real Database** + **Agent Memory**.
+**"Where's my order?" Support Bot** showcasing SochDB's "Dual Nature": **Real Database** + **Agent Memory**.
 
 **Scenario**: User asks *"My order is late. Can you reroute or replace it?"*
 
@@ -213,10 +213,10 @@ npm start
 
 ---
 
-## 🔑 Key ToonDB Features (Node.js SDK)
+## 🔑 Key SochDB Features (Node.js SDK)
 
-- **Embedded Mode**: Run ToonDB directly in your Node.js app (FFI)
-- **IPC Mode**: Connect to ToonDB server via Unix sockets
+- **Embedded Mode**: Run SochDB directly in your Node.js app (FFI)
+- **IPC Mode**: Connect to SochDB server via Unix sockets
 - **Async/Await**: Full Promise-based API
 - **Vector Search**: Built-in HNSW index
 - **SQL Support**: Execute SQL queries (via IPC mode)
@@ -228,7 +228,7 @@ npm start
 ### Database Operations
 
 ```javascript
-const { Database } = require('@sushanth/toondb');
+const { Database } = require('@sochdb/sochdb');
 
 // Open database
 const db = await Database.open('./my_database');
@@ -272,9 +272,9 @@ const rows = await db.query('SELECT * FROM users');
 
 ## 📖 Documentation
 
-- [ToonDB Documentation](https://toondb.io)
-- [Node.js SDK (npm)](https://www.npmjs.com/package/@sushanth/toondb)
-- [API Reference](https://toondb.io/docs/nodejs-sdk)
+- [SochDB Documentation](https://sochdb.io)
+- [Node.js SDK (npm)](https://www.npmjs.com/package/@sochdb/sochdb)
+- [API Reference](https://sochdb.io/docs/nodejs-sdk)
 
 ## 🧪 Testing
 
@@ -300,10 +300,10 @@ Apache License 2.0 - see the [LICENSE](../LICENSE) file for details.
 
 ## 🔗 Related Repositories
 
-- [toondb/toondb](https://github.com/toondb/toondb) - Main ToonDB repository
-- [toondb/toondb-python-examples](https://github.com/toondb/toondb-python-examples) - Python examples
-- [toondb/toondb-golang-examples](https://github.com/toondb/toondb-golang-examples) - Go examples
-- [toondb/toondb-examples](https://github.com/toondb/toondb-examples) - Multi-language examples
+- [sochdb/sochdb](https://github.com/sochdb/sochdb) - Main SochDB repository
+- [sochdb/sochdb-python-examples](https://github.com/sochdb/sochdb-python-examples) - Python examples
+- [sochdb/sochdb-golang-examples](https://github.com/sochdb/sochdb-golang-examples) - Go examples
+- [sochdb/sochdb-examples](https://github.com/sochdb/sochdb-examples) - Multi-language examples
 
 ## 🌟 Example Use Cases
 
