@@ -1,0 +1,16 @@
+{
+  "name": "sochdb-basic-kv-example",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx index.ts",
+    "test": "tsx index.ts"
+  },
+  "dependencies": {
+    "@sochdb/sochdb": "file:../../sochdb-nodejs-sdk"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
