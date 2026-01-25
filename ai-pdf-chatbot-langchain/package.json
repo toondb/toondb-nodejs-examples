@@ -1,0 +1,40 @@
+{
+  "name": "ai-pdf-chatbot-langchain",
+  "version": "1.0.0",
+  "description": "AI-powered PDF chatbot using SochDB, LangChain, and Azure OpenAI",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "ingest": "tsx src/ingest.ts",
+    "chat": "tsx src/chat.ts",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@sochdb/sochdb": "file:../../sochdb-nodejs-sdk",
+    "@langchain/core": "^0.3.0",
+    "@langchain/community": "^0.3.0",
+    "@langchain/openai": "^0.3.0",
+    "langchain": "^0.3.0",
+    "pdf-parse": "^1.1.1",
+    "dotenv": "^16.3.1",
+    "commander": "^11.1.0",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/pdf-parse": "^1.1.4",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "pdf",
+    "chatbot",
+    "rag",
+    "langchain",
+    "sochdb",
+    "ai",
+    "azure-openai"
+  ]
+}
